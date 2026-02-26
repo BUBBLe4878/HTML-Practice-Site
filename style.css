@@ -35,6 +35,11 @@ header li{
     margin-left:auto;
 }
 
+header a{
+    text-decoration: none;
+    color:#FFF;
+}
+
 header li:hover{
     background-color: rgb(108, 88, 241);
     cursor: pointer;
