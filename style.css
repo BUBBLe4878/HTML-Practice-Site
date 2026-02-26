@@ -19,7 +19,6 @@ header ul{
     display:flex;
     margin:0;
     font-size:18px;
-    justify-content: space-between;
     width:80%;
 
 }
@@ -47,12 +46,25 @@ main{
 }
 
 main h1{
-    font-size: 40px;
+    font-size: 55px;
     margin-bottom: 40px;
 }
 
+.textcontent{
+    display: block;
+    margin-left:5%;
+    width: 40%;
+    font-size: 20px;
+}
+
 #aboutme{
-        margin-right:3%;
+    display: flex;
+    margin-right: 3%;
+}
+
+#aboutme h2{
+    font-size: 45px;
+    margin-bottom: 30px;
 }
 
 #aboutme a{
@@ -61,15 +73,42 @@ main h1{
 
 #aboutme p{
     font-size: 20px;
-    width: 50%;
+    width: auto;
     margin: auto;
-    width:50%;
+
 }
 main img{
-    margin:0 5% 0 10%;
-    float: left;
-    width: 25%;
+    margin:5%;
+    width: 300px;
     height: auto;
     border-radius: 10%;
     border: 5px solid #000;
+}
+
+hr{ 
+    margin: 1% 0 1% 0;
+}
+
+footer{
+    background-color:rgb(77, 77, 77);
+    color:white;
+    text-align: center;
+    padding: 60px;
+    padding-top: 30px;
+    bottom: 0;
+    width: auto;
+}
+
+.footerstuff{
+    font-size: 20px;
+    height:150px;
+    display: block;
+    margin-bottom:40px;
+}
+
+.footerstuff a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
 }
