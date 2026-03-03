@@ -1,60 +1,102 @@
-body {
-    margin: 0;
+body{
+    margin:0;
 }
 
-/*==============Header=================*/
-
-header {
+header{
     display: flex;
     align-items: center;
-    background-color: rgb(108, 88, 241);
-    width: 100%;
+    background-color:rgb(108, 88, 241);
+    width:100%;
 }
 
-header h1 {
-    display: inline;
-    color: white;
-    margin-left: 20px;
+header h1{
+    display:inline;
+    color:white;
+    margin-left:20px;
 }
 
-header ul {
-    display: flex;
-    margin: 0;
-    font-size: 18px;
-    width: 80%;
+header ul{
+    display:flex;
+    margin:0;
+    font-size:18px;
+    width:80%;
 
 }
 
-header li {
-    color: #FFF;
+header li{
+    color:#FFF;
     height: fit-content;
-    width: fit-content;
-    list-style: none;
-    padding: 5px;
+    width:fit-content;
+    list-style:none;
+    padding:5px;
     background-color: blueviolet;
     border-radius: 15px;
-    width: max-content;
-    margin-left: auto;
+    width:max-content;
+    margin-left:auto;
 }
 
-header a {
+header a{
     text-decoration: none;
-    color: #FFF;
+    color:#FFF;
 }
 
-header li:hover {
+header li:hover{
     background-color: rgb(108, 88, 241);
     cursor: pointer;
 }
 
-/*==============footer=================*/
-hr {
+main{
+    text-align: center;
+    margin-top: 20px;
+}
+
+main h1{
+    font-size: 55px;
+    margin-bottom: 40px;
+}
+
+.textcontent{
+    display: block;
+    margin-left:5%;
+    width: 40%;
+    font-size: 20px;
+}
+
+#aboutme{
+    display: flex;
+    margin-right: 3%;
+}
+
+#aboutme h2{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+#aboutme a{
+    text-decoration: none;
+}
+
+#aboutme p{
+    font-size: 20px;
+    width: auto;
+    margin: auto;
+
+}
+main img{
+    margin:5%;
+    width: 300px;
+    height: auto;
+    border-radius: 10%;
+    border: 5px solid #000;
+}
+
+hr{ 
     margin: 1% 0 1% 0;
 }
 
-footer {
-    background-color: rgb(77, 77, 77);
-    color: white;
+footer{
+    background-color:rgb(77, 77, 77);
+    color:white;
     text-align: center;
     padding: 60px;
     padding-top: 30px;
@@ -62,131 +104,16 @@ footer {
     width: auto;
 }
 
-.footerstuff {
+.footerstuff{
     font-size: 20px;
-    height: 150px;
+    height:150px;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom:40px;
 }
 
-.footerstuff a {
+.footerstuff a{
     text-decoration: none;
-    color: white;
+    color:white;
     font-size: 20px;
     margin: 0 10px 0 10px;
-}
-
-/*==============main body content(what people will read and stuff)=================*/
-
-main {
-    text-align: center;
-    margin-top: 20px;
-}
-
-main h1 {
-    font-size: 60px;
-    margin-bottom: 40px;
-    color: rgb(23, 1, 44);
-}
-
-#skills-intro {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.skillslistcontent ul {
-    width: 90%;
-    margin: 0 40px;
-    justify-content: space-between;
-    display: flex;
-}
-
-.skillslist ul {
-    padding-left: 0;
-}
-
-.skillslistcontent li {
-    list-style: none;
-    background-color: rgb(108, 88, 241);
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-    width: 30%;
-    height: auto;
-    margin: 20px;
-    text-shadow: #FFF 1px 0 1px;
-}
-
-#htmlcss {
-    background-image: url("img/html.png");
-}
-
-#htmlcss p {
-    color: #edf39f;
-}
-
-/*==============after short skills list=================*/
-.img {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    box-shadow: #e0dede 0px 0px 10px;
-    object-fit: cover;
-}
-
-.webdesign,
-.printing3d {
-    padding-top: 0.5px;
-    border-radius: 10px;
-    box-shadow: #e0dede 0px 0px 10px;
-    background-image: url("img/webdesign.png");
-}
-
-/*==============more section=================*/
-
-.morelist {
-    display: block;
-    justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
-    list-style-type: none;
-}
-
-#more h2 {
-    margin-top: 40px;
-    font-size: 35px;
-}
-
-#more li h2 {
-    font-size: 30px;
-}
-
-/*==============more about 3d printing=================*/
-article {
-    max-width: 70%;
-    margin: 60px auto;
-    padding: 40px;
-    background: #FFF;
-    border-radius: 12px;
-}
-
-.morelist h2 {
-    font-size: 2rem;
-    margin-bottom: 5px;
-    padding-bottom: 10px;
-}
-
-.morelist h3 {
-    font-size: 1.3rem;
-    margin-top: 4px;
-    margin-bottom: 5px;
-    color: #444;
-}
-
-.morelist p {
-    margin: 7px;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    color: #333;
-    text-align: left;
 }
