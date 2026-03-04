@@ -1,102 +1,109 @@
-body{
-    margin:0;
+body {
+    margin: 0px;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
-    background-color:rgb(108, 88, 241);
-    width:100%;
+    justify-content: space-between;
+    /* important */
+    background-color: rgb(108, 88, 241);
+    padding: 10px 20px;
+    width: auto;
 }
 
-header h1{
-    display:inline;
-    color:white;
-    margin-left:20px;
+#nav {
+    margin-left: 5Vw;
 }
 
-header ul{
-    display:flex;
-    margin:0;
-    font-size:18px;
-    width:80%;
-
+header h1 {
+    display: inline;
+    color: white;
+    margin-left: 20px;
 }
 
-header li{
-    color:#FFF;
+header ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    color: #FFF;
     height: fit-content;
-    width:fit-content;
-    list-style:none;
-    padding:5px;
+    width: fit-content;
+    list-style: none;
+    padding: 5px;
     background-color: blueviolet;
     border-radius: 15px;
-    width:max-content;
-    margin-left:auto;
+    width: max-content;
+    margin-left: 10px;
 }
 
-header a{
+header a {
     text-decoration: none;
-    color:#FFF;
+    color: #FFF;
 }
 
-header li:hover{
+header li:hover {
     background-color: rgb(108, 88, 241);
     cursor: pointer;
 }
 
-main{
+main {
     text-align: center;
     margin-top: 20px;
 }
 
-main h1{
+main h1 {
     font-size: 55px;
     margin-bottom: 40px;
 }
 
-.textcontent{
-    display: block;
-    margin-left:5%;
+.textcontent {
+    margin-left: 5%;
     width: 40%;
-    font-size: 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
 }
 
-#aboutme{
+#aboutme {
     display: flex;
-    margin-right: 3%;
 }
 
-#aboutme h2{
+#aboutme h2 {
     font-size: 45px;
     margin-bottom: 30px;
 }
 
-#aboutme a{
+#aboutme a {
     text-decoration: none;
 }
 
-#aboutme p{
+#aboutme p {
     font-size: 20px;
     width: auto;
     margin: auto;
 
 }
-main img{
-    margin:5%;
+
+main img {
+    margin: 5%;
     width: 300px;
     height: auto;
     border-radius: 10%;
     border: 5px solid #000;
 }
 
-hr{ 
+hr {
     margin: 1% 0 1% 0;
 }
 
-footer{
-    background-color:rgb(77, 77, 77);
-    color:white;
+footer {
+    background-color: rgb(77, 77, 77);
+    color: white;
     text-align: center;
     padding: 60px;
     padding-top: 30px;
@@ -104,16 +111,60 @@ footer{
     width: auto;
 }
 
-.footerstuff{
+.footerstuff {
     font-size: 20px;
-    height:150px;
+    height: 150px;
     display: block;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
-.footerstuff a{
+.footerstuff a {
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 20px;
     margin: 0 10px 0 10px;
+}
+
+@media (max-width: 768px) {
+
+    #nav {
+        margin-left: 0;
+    }
+
+    header {
+        padding-right: 55px;
+        margin-left:0;
+        flex-direction: column;
+    }
+
+    header ul {
+        justify-content: center;
+        /*flex-direction: column;*/
+        font-size:xx-small;
+        padding: 0;
+        gap:0;
+    }
+
+    #aboutme {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 36px;
+    }
+
+    #aboutme h2 {
+        font-size: 30px;
+    }
+
+    main img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    #aboutme p{
+        padding-right:5%;
+    }
 }
