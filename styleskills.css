@@ -7,8 +7,15 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    /* important */
     background-color: rgb(108, 88, 241);
-    width: 100%;
+    padding: 10px 20px;
+    width: auto;
+}
+
+#nav {
+    margin-left: 5Vw;
 }
 
 header h1 {
@@ -19,10 +26,9 @@ header h1 {
 
 header ul {
     display: flex;
+    gap: 10px;
+    padding: 0;
     margin: 0;
-    font-size: 18px;
-    width: 80%;
-
 }
 
 header li {
@@ -34,7 +40,7 @@ header li {
     background-color: blueviolet;
     border-radius: 15px;
     width: max-content;
-    margin-left: auto;
+    margin-left: 10px;
 }
 
 header a {
@@ -46,6 +52,7 @@ header li:hover {
     background-color: rgb(108, 88, 241);
     cursor: pointer;
 }
+
 
 /*==============footer=================*/
 hr {
@@ -189,4 +196,46 @@ article {
     font-size: 0.9rem;
     color: #333;
     text-align: left;
+}
+
+/*==============window resizes=================*/
+@media (max-width: 768px) {
+
+    #nav {
+        margin-left: 0;
+    }
+
+    header {
+        padding-right: 55px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    header ul {
+        justify-content: center;
+        /*flex-direction: column;*/
+        font-size: xx-small;
+        padding: 0;
+        gap: 0;
+    }
+
+    .skillslistcontent ul {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
