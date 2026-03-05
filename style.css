@@ -2,6 +2,8 @@ body {
     margin: 0px;
 }
 
+/*==============header==================*/
+
 header {
     display: flex;
     align-items: center;
@@ -50,7 +52,7 @@ header li:hover {
     background-color: rgb(108, 88, 241);
     cursor: pointer;
 }
-
+/*==============main==================*/
 main {
     text-align: center;
     margin-top: 20px;
@@ -60,7 +62,7 @@ main h1 {
     font-size: 55px;
     margin-bottom: 40px;
 }
-
+/*==============about me==================*/
 .textcontent {
     margin-left: 5%;
     width: 40%;
@@ -100,7 +102,7 @@ main img {
 hr {
     margin: 1% 0 1% 0;
 }
-
+/*==============footer==================*/
 footer {
     background-color: rgb(77, 77, 77);
     color: white;
@@ -124,7 +126,7 @@ footer {
     font-size: 20px;
     margin: 0 10px 0 10px;
 }
-
+/*==============for mobile==================*/
 @media (max-width: 768px) {
 
     #nav {
