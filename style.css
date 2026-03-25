@@ -52,6 +52,35 @@ header li:hover {
     background-color: rgb(108, 88, 241);
     cursor: pointer;
 }
+
+
+/*==============dropdown==================*/
+
+summary{
+    list-style: none;
+}
+.dropdown details{
+    border-radius: 10px;
+}
+.dropdown-content {
+    position: absolute;
+    width:auto;
+    background-color: rgb(108, 88, 241);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: white;
+    /*background-color: blueviolet;*/
+    background-color:  rgb(108, 88, 241);
+    border-radius: 10px;
+    padding: 7px 9px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: blueviolet;
+}
 /*==============main==================*/
 main {
     text-align: center;
